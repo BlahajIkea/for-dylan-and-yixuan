@@ -10,6 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+(ex02)
+
+____EXERSIZE____
+
+This exersize wants us to swap the values of two ints.
+
+____ft_swap____
+
+Notice how we are using pointes, so what this function
+does is that it uses pointers and swaps the values in the parameters
+of the function.
+
+Firstly we must make a temp variable since we need 
+*/
+
 void	ft_swap(int *a, int *b)
 {
 	int	temp;
