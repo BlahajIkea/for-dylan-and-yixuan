@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+
+
+
+*/
+
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
@@ -23,7 +29,7 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 	dest[i + 1] = '\0';
 }
-/*
+
 #include<string.h>
 #include <stdio.h>
 int	main(void)
@@ -38,4 +44,3 @@ int	main(void)
 	ft_strcpy(a,b);
 	return (0);
 }
-*/
