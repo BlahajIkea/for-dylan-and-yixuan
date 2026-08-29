@@ -18,6 +18,12 @@ This exersize requires us to print out the letters a-z.
 Firstly we make a ft_putchar(char c) so that we can have
 an easier time printing out the required words.
 
+Something to note is that when we are using 'a'. 
+We are using the character 'a'. 
+
+If we don't have the single colons, then we are using ascii instead 
+of character or char.
+
 So we can start the count at the character 'a', then while alpha is 
 less than 'z', we then increment it by alpha++.
 */

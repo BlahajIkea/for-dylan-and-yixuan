@@ -27,3 +27,12 @@ void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int	nbr = 42;
+	int	*ptr = &nbr;
+	printf("%d", *ptr);
+}*/

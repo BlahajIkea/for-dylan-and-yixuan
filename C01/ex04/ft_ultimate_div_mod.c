@@ -10,6 +10,43 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+(ex04)
+
+____EXERSIZE____
+
+This exersize wants us to divide 'int *a' by 'int *b'
+and store it into 'div'.
+
+Then mod or modify 'int a' by 'int *b', and store it into
+'mod'.
+
+____ft_ultimate_div_mod____
+
+First we make two ints 'div' and 'mod'.
+
+_____DIV_____
+div = *a / *b;
+
+Now what this does is that it divides 
+
+*a by *b, and stores it into 'div'.
+
+____MOD____
+
+mod = *a % *b;
+
+Mod or % modulates the numbers so 
+it divides but doesn't give the output of the divide.
+
+Mod only gives the REMAINDER off the division.
+
+____main____
+
+Since we are taking those variables from places from memory,
+once again we have to dereference them with '&'.
+*/
+
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	div;

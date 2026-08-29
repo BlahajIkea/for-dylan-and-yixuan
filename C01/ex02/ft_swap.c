@@ -23,7 +23,28 @@ Notice how we are using pointes, so what this function
 does is that it uses pointers and swaps the values in the parameters
 of the function.
 
-Firstly we must make a temp variable since we need 
+The reason why we use pointers in this is because we need to use 
+memory locations when swapping, instead of using basic ints, we need
+the locations in the PC's memory to swap the variables.
+
+Firstly we must make a temp variable since when we swap the variables
+we need to store it first.
+
+
+____LOGIC____
+Now here is how it works:
+
+Whatever is stored in '*a' put into temp.
+Whatever is stored in '*b' put into '*a'.
+Whatever is stored in 'temp' you put into '*b'.
+
+____main____
+
+Ok so when you run the program, notice how we are
+dereferencing the pointer with the '&'. 
+
+Without it, the computer could not find the place 
+of the variables we want to swap and would fail.
 */
 
 void	ft_swap(int *a, int *b)
