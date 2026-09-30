@@ -10,6 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+____EXERSIZE_____
+
+This exersize wants us to check is within 
+0-9, then return 0.
+Else it will return 1.
+
+_____ft_str_is_numeric_____
+
+First we need to loop though the string with the unsigned int.
+
+First we are checking if
+the contents of the string
+is within the 0-9 then it will print 0.
+
+If there is anything other than a number int the string.
+Then it will print 1, or as an error.
+*/
 #include <stdio.h>
 
 int	ft_str_is_numeric(char *str)
@@ -20,10 +38,10 @@ int	ft_str_is_numeric(char *str)
 	while (str[i])
 	{
 		if (str[i] > '0' && str[i] < '9')
-			return (1);
+			return (0);
 		i++;
 	}
-	return (0);
+	return (1);
 }
 /*
 int	main(void)

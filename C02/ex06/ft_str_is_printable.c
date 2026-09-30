@@ -10,6 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+____EXERSIZE_____
+
+This exersize wants us to check if a letter is printable 
+or not. For this exersize we are going to use ASCII.
+
+The '0' character is 0. While the '31' character is
+'unit seperator' which is an unprintable letter.
+It does 'exist' but you cannot print it like other characters.
+
+So basically the if statement is if the string has a
+unprintable letter it will return 1 which is an error.
+
+Else it will print out 0 which means no errors, or all
+characters present in the string are printable characters.
+*/
+
 int	ft_str_is_printable(char *str)
 {
 	int	i;
@@ -31,7 +48,5 @@ char abc[] = "weho";
 int	done;
 done = ft_str_is_printable(abc);
 
-printf("%d", done);
-
-}
+} 
 */
