@@ -29,9 +29,9 @@ Then it will return 0.
 Else it will return 1 meaning an error.
 */
 
-int	ft_str_is_uppercase(char *str) 
+int	ft_str_is_uppercase(char *str)
 {
-	while (*str) 
+	while (*str)
 	{
 		if (!(*str >= 'A' && *str <= 'Z'))
 			return (0);

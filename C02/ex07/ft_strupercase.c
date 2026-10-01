@@ -34,7 +34,7 @@ the difference between the uppercase and lowercase is
 32 values on the Hex scale.
 */
 
-char *ft_strupcase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
 

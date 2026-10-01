@@ -29,7 +29,6 @@ Then it will return 0.
 Else it will return 1 meaning an error.
 */
 
-
 int	ft_str_is_lowercase(char *str)
 {
 	while (*str != '\0')

@@ -37,7 +37,6 @@ If any place in the string is not part of the alphabet (a-z)
 or A-Z
 */
 
-#include <stdio.h>
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -51,11 +50,12 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (1);
 }
-
+/*
+#include <stdio.h>
 int	main(void)
 {
 	char	a[] = "1";
 	int	d = ft_str_is_alpha(a);
 	printf("%d", d);
 }
-
+*/
