@@ -44,7 +44,20 @@ void	mid(int c, int x)
 		i++;
 	}
 	ft_putchar('B');
+	ft_putchar('\n');
 	i = 0;
+}
+
+void	loop_mid(int c, int x, int y)
+{
+	int	i;
+
+	i = 0;
+	while (i < y - 2)
+	{
+		mid(c, x);
+		i++;
+	}
 }
 
 void	rush(int x, int y)
@@ -65,7 +78,7 @@ void	rush(int x, int y)
 		{
 			ft_putchar('\n');
 			c = 0;
-			mid(c, x);
 		}
 	}
+	loop_mid(c, x, y);
 }
