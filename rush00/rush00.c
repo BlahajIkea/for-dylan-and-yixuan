@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 void	ft_putchar(char c);
 
 void	top(int c, int r, int x)
@@ -22,7 +24,28 @@ void	top(int c, int r, int x)
 		ft_putchar('B');
 }
 
+void	mid(int c, int x)
+{
+	int	i;
 
+	i = 0;
+	while (i <= x)
+	{
+		if (c == 0)
+		{
+			ft_putchar('B');
+			c++;
+		}
+		else if (c < x -1)
+		{
+			ft_putchar('-');
+			c++;
+		}
+		i++;
+	}
+	ft_putchar('B');
+	i = 0;
+}
 
 void	rush(int x, int y)
 {
@@ -33,12 +56,16 @@ void	rush(int x, int y)
 		return ;
 	r = 0;
 	c = 0;
-	while (c != x)
+	while (r != y)
 	{
 		top(c, r, x);
 		c++;
 		r++;
 		if (c == x)
+		{
 			ft_putchar('\n');
+			c = 0;
+			mid(c, x);
+		}
 	}
 }
