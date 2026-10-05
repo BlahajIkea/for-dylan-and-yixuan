@@ -12,7 +12,7 @@
 
 void	ft_putchar(char c);
 
-void	draw(int width, char left, char mid, char right) 
+void	draw(int width, char left, char mid, char right)
 {
 	int	i;
 
@@ -28,7 +28,6 @@ void	draw(int width, char left, char mid, char right)
 	ft_putchar('\n');
 }
 
-
 void	rush(int x, int y)
 {
 	int	i;
@@ -38,7 +37,6 @@ void	rush(int x, int y)
 		return ;
 	draw(x, 'A', 'B', 'C');
 	i = 2;
-
 	while (i < y)
 	{
 		draw(x, 'B', ' ', 'B');
