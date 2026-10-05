@@ -10,75 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 void	ft_putchar(char c);
 
-void	top(int c, int r, int x)
-{
-	if ((c == 0 && r == 0))
-		ft_putchar('A');
-	else if (c == x - 1)
-		ft_putchar('C');
-	else if (c < x - 1)
-		ft_putchar('B');
-}
-
-void	mid(int c, int x)
+void	draw(int width, char left, char mid, char right) 
 {
 	int	i;
 
+	ft_putchar(left);
 	i = 0;
-	while (i <= x)
+	while (i < width -2)
 	{
-		if (c == 0)
-		{
-			ft_putchar('B');
-			c++;
-		}
-		else if (c < x -1)
-		{
-			ft_putchar('-');
-			c++;
-		}
+		ft_putchar(mid);
 		i++;
 	}
-	ft_putchar('B');
+	if (width > 1)
+		ft_putchar(right);
 	ft_putchar('\n');
-	i = 0;
 }
 
-void	loop_mid(int c, int x, int y)
-{
-	int	i;
-
-	i = 0;
-	while (i < y - 2)
-	{
-		mid(c, x);
-		i++;
-	}
-}
 
 void	rush(int x, int y)
 {
-	int	r;
-	int	c;
+	int	i;
 
+	i = 0;
 	if (x <= 0 || y <= 0)
 		return ;
-	r = 0;
-	c = 0;
-	while (r != y)
+	draw(x, 'A', 'B', 'C');
+	i = 2;
+
+	while (i < y)
 	{
-		top(c, r, x);
-		c++;
-		r++;
-		if (c == x)
-		{
-			ft_putchar('\n');
-			c = 0;
-		}
+		draw(x, 'B', ' ', 'B');
+		i++;
 	}
-	loop_mid(c, x, y);
+	if (y > 1)
+		draw(x, 'A', 'B', 'C');
 }
