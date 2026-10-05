@@ -14,14 +14,14 @@ void	ft_putchar(char c);
 
 void	draw(int width, char left, char mid, char right)
 {
-	int	i;
+	int	row;
 
 	ft_putchar(left);
-	i = 0;
-	while (i < width -2)
+	row = 0;
+	while (row < width -2)
 	{
 		ft_putchar(mid);
-		i++;
+		row++;
 	}
 	if (width > 1)
 		ft_putchar(right);
@@ -30,17 +30,16 @@ void	draw(int width, char left, char mid, char right)
 
 void	rush(int x, int y)
 {
-	int	i;
+	int	height;
 
-	i = 0;
+	height = 0;
 	if (x <= 0 || y <= 0)
 		return ;
 	draw(x, 'A', 'B', 'C');
-	i = 2;
-	while (i < y)
+	while (height < y -2)
 	{
 		draw(x, 'B', ' ', 'B');
-		i++;
+		height++;
 	}
 	if (y > 1)
 		draw(x, 'A', 'B', 'C');
